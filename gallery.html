@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -240,3 +241,236 @@
 <div class="rectangle05"></div>
 <div class="rectangle06"></div>
 <div id="google_translate_element"></div>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap" rel="stylesheet">
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement(
+                    {pageLanguage: 'en'}, 
+                    'google_translate_element'
+                );
+            }
+        </script>
+        <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <style>
+        /* Modal styles */
+    .zoom-modal {
+        display: none; /* Hidden by default */
+        position: fixed;
+        z-index: 1010;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    }
+    
+    .zoom-modal-content {
+        background-color: #fff;
+        margin: 10% auto;
+        padding: 20px;
+        border: 1px solid #888;
+        width: 90%;
+        height: 71%;
+        text-align: center;
+    }
+    
+    .zoom-modal-content img {
+        width: 50%;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .close-btn {
+        color: #aaa;
+        font-size: 28px;
+        font-weight: bold;
+        cursor: pointer;
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+    
+    .close-btn:hover,
+    .close-btn:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    /* Hover effect for image zoom */
+    .zoom-image {
+        transition: transform 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    
+    .zoom-image:hover {
+        transform: scale(1.1); /* Zoom effect on hover */
+    }
+    /* Small devices: Phones */
+@media (max-width: 576px) {
+    .zoom-modal-content {
+        width: 90%; /* Set width to 90% for smaller screens */
+        height: auto; /* Allow height to adjust dynamically */
+        padding: 15px; /* Reduce padding */
+    }
+
+    .zoom-modal-content img {
+        width: 100%; /* Set image width to 100% for better responsiveness */
+        max-width: 100%; /* Ensure the image fits within the modal */
+    }
+
+    .close-btn {
+        font-size: 24px; /* Reduce font size of the close button */
+        top: 15px; /* Adjust position for small screens */
+        right: 15px;
+    }
+
+    .zoom-image {
+        width: 100%; /* Make sure the image fits within the screen */
+    }
+}
+
+/* Medium devices: Tablets */
+@media (min-width: 577px) and (max-width: 768px) {
+    .zoom-modal-content {
+        width: 80%; /* Set width to 80% for medium devices */
+        height: auto;
+        padding: 20px; /* Adjust padding */
+    }
+
+    .zoom-modal-content img {
+        width: 70%; /* Set image width to 70% for medium screens */
+        max-width: 100%;
+    }
+
+    .close-btn {
+        font-size: 26px; /* Slightly larger close button */
+        top: 10px;
+        right: 20px;
+    }
+
+    .zoom-image {
+        width: 100%; /* Adjust image width */
+    }
+}
+
+/* Large devices: Laptops/Desktops */
+@media (min-width: 769px) {
+    .zoom-modal-content {
+        width: 50%; /* Set width to 50% for larger screens */
+        height: 70%;
+        padding: 20px; /* Default padding */
+    }
+
+    .zoom-modal-content img {
+        width: 100%; /* Ensure the image fills the modal */
+        max-width: 100%;
+    }
+
+    .close-btn {
+        font-size: 28px; /* Default size for close button */
+        top: 10px;
+        right: 20px;
+    }
+
+    .zoom-image {
+        width: 100%; /* Default width */
+    }
+}
+
+    </style>
+</head>
+<body>
+    <div class="rectangle01"></div>
+    <div class="rectangle02"></div>
+<header>
+    <div class="logo">
+        <img src="assets/logo.png" alt="DELTA MISR EXPORT IMPORT">
+    </div>
+    <div>
+        <h2>دلتا مصر للتنمية والاستثمار الزراعى والاستيراد والتصدير</h2>
+        <p>Delta Misr Development & Agricultural Investment - Export & Import</p>
+    </div>
+</header>
+<nav>
+    <button class="toggle-btn" aria-expanded="false" aria-controls="nav-menu">
+        ☰
+    </button>
+    <ul class="nav-menu" id="nav-menu">
+        <li><a href="index.html" id="home-btn">Home</a></li>
+        <li><a href="product.html" id="product-btn">Product</a></li>
+        <li><a href="gallery.html" id="gallery-btn">Gallery</a></li>
+        <li><a href="contact.html" id="contact-btn">Contact</a></li>
+    </ul>
+</nav>    
+<div>
+    <section id="gallery" class="scroll-section">
+        <div class="image-grid">
+            <img src="assets/p01.png" alt="Product 1" class="zoom-image">
+            <img src="assets/p02.png" alt="Product 2" class="zoom-image">
+            <img src="assets/p03.png" alt="Product 3" class="zoom-image">
+            <img src="assets/p04.png" alt="Product 4" class="zoom-image">
+            <img src="assets/p05.png" alt="Product 5" class="zoom-image">
+            <img src="assets/p06.png" alt="Product 6" class="zoom-image">
+            <img src="assets/p07.png" alt="Product 7" class="zoom-image">
+            <img src="assets/p08.png" alt="Product 8" class="zoom-image">
+            <img src="assets/p09.png" alt="Product 9" class="zoom-image">
+        </div>
+    </section>
+</div>
+
+<!-- Modal for zoomed image -->
+<div id="zoom-modal" class="zoom-modal">
+    <div class="zoom-modal-content">
+        <span class="close-btn">&times;</span>
+        <img id="zoomed-image" src="" alt="Zoomed Product">
+    </div>
+</div>
+
+<footer>
+
+</footer>
+<div id="google_translate_element"></div>
+<script src="script.js"></script>
+<script>
+    // Get all images with class 'zoom-image'
+    const zoomImages = document.querySelectorAll('.zoom-image');
+    
+    // Get modal elements
+    const zoomModal = document.getElementById('zoom-modal');
+    const zoomedImage = document.getElementById('zoomed-image');
+    const closeBtn = document.querySelector('.close-btn');
+
+    // Add event listener to open modal on image click
+    zoomImages.forEach(image => {
+        image.addEventListener('click', () => {
+            zoomedImage.src = image.src; // Set the clicked image as the zoomed image
+            zoomModal.style.display = 'block'; // Show the modal
+        });
+    });
+
+    // Close the modal when the close button is clicked
+    closeBtn.addEventListener('click', () => {
+        zoomModal.style.display = 'none'; // Hide the modal
+    });
+
+    // Close the modal if clicked outside the image area
+    window.addEventListener('click', (e) => {
+        if (e.target === zoomModal) {
+            zoomModal.style.display = 'none'; // Hide the modal
+        }
+    });
+</script>
+</body>
+</html>
+>>>>>>> ea6a58665d960ab795716b964f0ce76e6849cbe3
